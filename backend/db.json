@@ -1,0 +1,34 @@
+{
+  "lectures": [],
+  "processing_jobs": [
+    {
+      "filename": "RAG_20250705T194446.mp4",
+      "status": "done",
+      "progress": 100,
+      "error": null,
+      "audio_path": "uploads\\RAG_20250705T194446.mp3",
+      "transcript_path": "uploads\\RAG_20250705T194446.transcript.txt",
+      "transcript_metadata": {
+        "length": 59124
+      }
+    },
+    {
+      "filename": "RAG_20250705T201020.mp4",
+      "status": "done",
+      "progress": 100,
+      "error": null,
+      "audio_path": "uploads\\RAG_20250705T201020.mp3",
+      "transcript_path": "uploads\\RAG_20250705T201020.transcript.txt",
+      "transcript_metadata": {
+        "length": 59171
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "4464b7c0-4dc1-4ef7-aecc-a4b444b6aba3",
+      "filename": "RAG_20250705T201020.mp4",
+      "created_at": "2025-07-05T20:10:20.588486Z"
+    }
+  ]
+}
