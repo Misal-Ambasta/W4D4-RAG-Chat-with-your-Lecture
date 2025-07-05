@@ -1,0 +1,49 @@
+# ---- Global ----
+.DS_Store
+Thumbs.db
+*.log
+
+# ---- Python / FastAPI backend ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+venv/
+.env
+
+
+# IDE / tooling
+.vscode/
+.idea/
+*.swp
+
+# Build & coverage
+htmlcov/
+.coverage
+*.egg-info/
+
+# App generated artifacts
+uploads/
+*.mp3
+*.mp4
+chroma_db/
+
+# Database
+/db.json
+
+# ---- Node / React frontend ----
+node_modules/
+dist/
+.build/
+
+# Build output (Vite/React)
+frontend/dist/
+
+# Yarn / pnpm / npm
+.yarn/
+.pnpm-store/
+
+# ---- Misc ----
+*.sublime-*
+todo.md
