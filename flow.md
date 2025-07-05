@@ -66,22 +66,22 @@ flowchart TD
         A[User Uploads Video] --> B[POST /upload]
         B --> C[upload_file]
         C --> D[process_job]
-        D --> E[ffmpeg-python: Extract Audio]
-        E --> F[openai.Audio.transcribe: Whisper]
-        F --> G[process_transcript: Chunking]
-        G --> H[OpenAIEmbeddings: text-embedding-3-small]
-        H --> I[ChromaDB: Store Embeddings]
-        I --> J[notify_progress (WebSocket)]
+        D --> E[ffmpeg-python Extract Audio]
+        E --> F[openai Audio transcribe Whisper]
+        F --> G[process_transcript Chunking]
+        G --> H[OpenAIEmbeddings text-embedding-3-small]
+        H --> I[ChromaDB Store Embeddings]
+        I --> J[notify_progress WebSocket]
         J --> K[Frontend Progress UI]
     end
     subgraph Chat
         L[User Sends Question] --> M[POST /rag_query]
-        M --> N[ChromaDB: Semantic Search]
-        N --> O[OpenAI GPT-4o mini: Response]
+        M --> N[ChromaDB Semantic Search]
+        N --> O[OpenAI GPT-4o mini Response]
         O --> P[Answer with Timestamps]
         P --> Q[Frontend Chat UI]
         Q --> R{Timestamp Clicked?}
-        R -- Yes --> S[VideoPlayer.seekTo()]
+        R -- Yes --> S[VideoPlayer seekTo]
     end
 ```
 
